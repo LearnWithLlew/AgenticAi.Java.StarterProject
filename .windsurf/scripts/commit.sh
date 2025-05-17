@@ -1,5 +1,6 @@
 #!/bin/bash -euo pipefail
 
+
 # Check if a commit message was provided
 if [ -z "$1" ]; then
   echo "Error: Commit message is required."
@@ -7,14 +8,13 @@ if [ -z "$1" ]; then
   exit 1
 fi
 
-# Get the commit message
 COMMIT_MESSAGE="$1"
 
-# Add all changes to staging
+# For testing
+echo "Committing: $COMMIT_MESSAGE"
+exit 0
+
 git add .
-
-# Commit the changes
 git commit -m "$COMMIT_MESSAGE"
-
 echo "Commited"
 exit 0
