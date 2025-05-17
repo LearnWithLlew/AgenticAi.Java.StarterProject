@@ -1,6 +1,6 @@
 # TDD Creating Tests Process
 
-**ALWAYS** start your response with `🟢` followed by a space when replying to me while we are in this process.
+STARTER_CHARACTER = 🟢
 
 **ALWAYS** ask the user one question at a time and wait for a response.
 

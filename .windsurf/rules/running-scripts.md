@@ -2,8 +2,10 @@
 trigger: always_on
 ---
 
+**ALWAYS** add the STARTER_CHARACTER followed by space at the start of your reply. 
+The STARTER_CHARACTER will change for each process file that is in progress.
 
-Always add 🧩 followed by space at the start of your reply
+Default STARTER_CHARACTER = 🧩
 
 ## ApprovalTests
 
@@ -13,4 +15,3 @@ Always add 🧩 followed by space at the start of your reply
 ## Running Tests
 
 To run tests: `./build_and_test.sh`
-
