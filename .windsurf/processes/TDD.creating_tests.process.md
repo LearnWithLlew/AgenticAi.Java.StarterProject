@@ -1,6 +1,6 @@
 # TDD Creating Tests Process
 
-STARTER_CHARACTER = 🟢
+STARTER_CHARACTER = 🔴
 
 **ALWAYS** ask the user one question at a time and wait for a response.
 
