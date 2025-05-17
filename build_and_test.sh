@@ -3,11 +3,14 @@ set -euo pipefail
 
 TMP_OUTPUT=$(mktemp)
 if mvn -B verify --file pom.xml > "$TMP_OUTPUT" 2>&1; then
-  echo "✅ Build and tests passed."
+  # Extract the number of tests run from Maven output
+  TESTS_LINE=$(grep -Eo 'Tests run: [0-9]+' "$TMP_OUTPUT" | head -n 1)
+  TESTS_PASSED=$(echo "$TESTS_LINE" | grep -Eo '[0-9]+')
+  echo "✅ Built: $TESTS_PASSED tests passed."
   rm "$TMP_OUTPUT"
 else
-  echo "❌ Build or tests failed. Output:"
   cat "$TMP_OUTPUT"
+  echo "❌ Build failed."
   rm "$TMP_OUTPUT"
   exit 1
 fi
