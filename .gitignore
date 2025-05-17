@@ -1,0 +1,12 @@
+.approval_tests_temp/
+*.class
+.settings
+.preferences
+.classpath
+.project
+target
+.idea
+*.iml
+
+*.received.*
+.DS_Store
