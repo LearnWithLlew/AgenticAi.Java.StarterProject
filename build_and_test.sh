@@ -7,10 +7,11 @@ if mvn -B verify --file pom.xml > "$TMP_OUTPUT" 2>&1; then
   TESTS_LINE=$(grep -Eo 'Tests run: [0-9]+' "$TMP_OUTPUT" | head -n 1)
   TESTS_PASSED=$(echo "$TESTS_LINE" | grep -Eo '[0-9]+')
   echo "✅ Built: $TESTS_PASSED tests passed."
-  rm "$TMP_OUTPUT"
+  EXIT_CODE=0
 else
   cat "$TMP_OUTPUT"
   echo "❌ Build failed."
-  rm "$TMP_OUTPUT"
-  exit 1
+  EXIT_CODE=1
 fi
+rm "$TMP_OUTPUT"
+exit $EXIT_CODE
