@@ -1,5 +1,7 @@
 # Bash Script Style Process
 
+STARTER_CHARACTER =💻
+
 - Use `#!/usr/bin/env bash` as shebang.
 - Always use `set -euxo pipefail` for safety and debugging.
 - Keep scripts minimal: no unnecessary comments or echoes.
