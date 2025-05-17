@@ -15,3 +15,6 @@ Default STARTER_CHARACTER = 🧩
 ## Running Tests
 
 To run tests: `./build_and_test.sh`
+
+## Commiting code
+to Commit code: `./.windsurf/scripts/commit.sh <message>`
