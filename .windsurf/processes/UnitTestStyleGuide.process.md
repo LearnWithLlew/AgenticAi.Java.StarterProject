@@ -1,6 +1,7 @@
 # Unit Test Style Guide
 
-**ALWAYS** start your response with `✅` followed by a space when replying to me.
+STARTER_CHARACTER = ✅
+
 
 ## Refactoring
 
