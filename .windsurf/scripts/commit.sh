@@ -10,10 +10,6 @@ fi
 
 COMMIT_MESSAGE="$1"
 
-# For testing
-echo "Committing: $COMMIT_MESSAGE"
-exit 0
-
 git add .
 git commit -m "$COMMIT_MESSAGE"
 echo "Commited"
