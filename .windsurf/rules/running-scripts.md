@@ -7,14 +7,4 @@ The STARTER_CHARACTER will change for each process file that is in progress.
 
 Default STARTER_CHARACTER = 🧩
 
-## ApprovalTests
-
-**NEVER** approve a test for us, the user will allways do that. If you believe the `.approved.` file needs to be changed, prompt the user.
-
-
-## Running Tests
-
-To run tests: `./build_and_test.sh`
-
-## Commiting code
 to Commit code: `./.windsurf/scripts/commit.sh <message>`
