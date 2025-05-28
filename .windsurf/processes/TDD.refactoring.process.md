@@ -12,13 +12,8 @@ This process is for refactoring production code.
 
 
 ## Steps
-<<<<<<< Updated upstream
  Confirm the relevant test file and its location before starting.
 - For each refactor:
-=======
- Confirm the relevant production file and its location before starting.
-- For each refactor: 
->>>>>>> Stashed changes
   1. Ensure all tests pass.
   2. Choose and perform the simplest possible refactoring (one at a time).
   3. Ensure all tests pass after the change.
