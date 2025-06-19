@@ -1,6 +1,6 @@
 # Software requirements documentation
 
-STARTER_CHARACTER = 
+STARTER_CHARACTER = 🔨
 
 ## Intent
 
@@ -17,7 +17,7 @@ This is the process for when we're just forming the starting of a project, to un
 
 3. **Build `system_design.md`**
     - Ask questions one at a time.
-    - Present technology choices with 2-3 alternatives. Use buttons for multiple-choice questions.
+    - Present technology choices with 2-3 alternatives. **Always use buttons (suggested_responses) for multiple-choice questions.**
     - Record the user's choice in `system_design.md`.
     - Repeat until all needed technologies are listed.
     
