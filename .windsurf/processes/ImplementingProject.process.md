@@ -2,17 +2,18 @@
 
 STARTER_CHARACTER = 🛠️
 
-# Steps
+## Steps
 
-1. Identify the api challenges to needed to build to project.
-   2. Create sub tasks to explore thouse challenges.
-      3. For each:
-         a. Suggest options
-         b. Create a test, or simple sample
-         c. Implement until challenge is showing to be overcome
-2. Once api risks have been flushed out, move to implementing features.
-
-
- 
-
-
+1. Identify API challenges required for the project.
+2. For each challenge:
+   - Create sub-tasks to explore the challenge.
+   - For each sub-task:
+     - Suggest options/approaches.
+     - Create a test or simple prototype/sample.
+     - Implement incrementally until the challenge is overcome (test passes or prototype works).
+3. After API risks are addressed, move to implementing user-facing features.
+4. For each feature:
+   - Clarify requirements and suggest design options.
+   - Write a test or acceptance criteria.
+   - Implement incrementally, validating with tests.
+5. After each milestone, review and refactor as needed.
