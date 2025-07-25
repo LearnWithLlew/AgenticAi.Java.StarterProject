@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Northern Light Tracker</title>
+</head>
+<body>
+    <h1>Northern Light Tracker</h1>
+    <p>Enter your city to get calendar events for when the northern lights will be visible.</p>
+    <form th:action="@{/search}" method="get">
+        <input type="text" name="city" placeholder="Enter city" required />
+        <button type="submit">Find Northern Lights Events</button>
+    </form>
+    <div id="results">
+        <!-- Calendar event suggestions will appear here -->
+        <div th:if="${events != null}">
+            <h2>Upcoming Northern Lights Events</h2>
+            <ul>
+                <li th:each="event : ${events}" th:text="${event}"></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
